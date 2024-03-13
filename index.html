@@ -12,14 +12,35 @@
     <p id="description">Thank you for taking your time to fill out this form!</p>
     <div class="box">
         <form action="" id="survey-form">
-            <label class="label" for="name">Name</label><br>
-            <input class="input" id="name" type="text" placeholder="Enter your name" required><br>
-
-            <label class="label" for="email">Email</label><br>
-            <input class="input" id="email" type="email" placeholder="Enter your Email" required><br>
-
-            <label class="label" for="number">Phone number<span id="opt">(optional)</span></label><br>
-            <input class="input" id="number" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="Phone number" maxlength="9"><br>
+            <div id="formgroup">
+                <label id="name-label" for="name">Name</label><br>
+                <input class="input" id="name" type="text" placeholder="Enter your name" required><br>
+            </div>
+            <div id="formgroup">
+                <label id="email-label" for="email">Email</label><br>
+                <input class="input" id="email" type="email" placeholder="Enter your Email" required><br>
+            </div>
+            <div id="formgroup">
+                <label id="number-label" for="number">Phone number<span id="opt">(optional)</span></label><br>
+                <input class="input" id="number" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="Phone number" maxlength="9" minlength="9"><br>
+            </div>
+            <div id="formgroup">
+                <p>Which option best describes your current role?</p>
+                <select id="dropdown">
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full-time job</option>
+                    <option value="freelance">Freelancer</option>
+                    <option value="prefnot">Prefer not to say</option>
+                </select>
+            </div>
+            <div id="formgroup">
+                <p>How many years of experience do you have in the field?</p>
+                <input type="radio" id="noexp" name="exp" value="no experience">
+                <label for="noexp">No experience</label><br>
+                <input type="radio" id="0-1year" name="exp" value="0-1year">
+                <label for="0-1year">0-1 years</label><br>
+            </div>
         </form>
     </div>
 </body>
