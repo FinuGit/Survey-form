@@ -4,8 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="myScript.js"></script>
+    <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    
+    <h1 id="title">Survey Form Template</h1>
+    <p id="description">Thank you for taking your time to fill out this form!</p>
+    <div class="box">
+        <form action="" id="survey-form">
+            <label class="label" for="name">Name</label><br>
+            <input class="input" id="name" type="text" placeholder="Enter your name" required><br>
+
+            <label class="label" for="email">Email</label><br>
+            <input class="input" id="email" type="email" placeholder="Enter your Email" required><br>
+
+            <label class="label" for="number">Phone number<span id="opt">(optional)</span></label><br>
+            <input class="input" id="number" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="Phone number" maxlength="9"><br>
+        </form>
+    </div>
 </body>
 </html>
