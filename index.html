@@ -24,7 +24,7 @@
             </div>
             <div id="formgroup">
                 <label id="number-label" for="number">Phone number<span id="opt">(optional)</span></label><br>
-                <input class="input" id="number" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="Phone number" maxlength="9" minlength="9"><br>
+                <input class="input" id="number" type="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="Phone number" min="9" max="9"><br>
             </div>
             <div id="formgroup">
                 <p>Which option best describes your current role?</p>
@@ -54,13 +54,13 @@
             </div>
             <div id="formgroup">
                 <p>Which role/s are you interested in?</p>
-                <input type="checkbox" id="role">
+                <input type="checkbox" id="role" value="frontend">
                 <label id="frontend-label" for="role">Frontend Developer</label><br>
-                <input type="checkbox" id="role">
+                <input type="checkbox" id="role" value="backend">
                 <label id="backend-label" for="role">Backend Developer</label><br>
-                <input type="checkbox" id="role">
+                <input type="checkbox" id="role" value="fullstack">
                 <label id="fullstack-label" for="role">Fullstack Developer</label><br>
-                <input type="checkbox" id="role">
+                <input type="checkbox" id="role" value="devops">
                 <label id="devops-label" for="role">Devops</label><br>
             </div>
             <div id="formgroup">
@@ -69,7 +69,7 @@
                 <input type="file" id="cvUpload" name="CV"/>
             </div>
             <div id="formgroup">
-                <input type="submit">
+                <input type="submit" id="submit">
             </div>
         </form>
     </div>
