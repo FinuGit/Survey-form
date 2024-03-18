@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Survey Form Job Application</title>
     <script src="myScript.js"></script>
     <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    <h1 id="title">Survey Form Template</h1>
+    <h1 id="title">Survey Form Job Application</h1>
     <p id="description">Thank you for taking your time to fill out this form!</p>
     <div class="box">
         <form action="" id="survey-form">
             <div id="formgroup">
-                <label id="name-label" for="name">Name</label><br>
+                <label id="name-label" for="name">Name</label>
+                    <span class="form-required">*</span>
                 <input class="input" id="name" type="text" placeholder="Enter your name" required><br>
             </div>
             <div id="formgroup">
                 <label id="email-label" for="email">Email</label><br>
+                    <span class="form-required">*</span>
                 <input class="input" id="email" type="email" placeholder="Enter your Email" required><br>
             </div>
             <div id="formgroup">
@@ -36,10 +38,38 @@
             </div>
             <div id="formgroup">
                 <p>How many years of experience do you have in the field?</p>
+                    <span class="form-required">*</span>
                 <input type="radio" id="noexp" name="exp" value="no experience">
                 <label for="noexp">No experience</label><br>
                 <input type="radio" id="0-1year" name="exp" value="0-1year">
                 <label for="0-1year">0-1 years</label><br>
+                <input type="radio" id="1-3years" name="exp" value="1-3years">
+                <label for="1-3years">1-3 years</label><br>
+                <input type="radio" id="3+years" name="exp" value="3+years">
+                <label for="3+years">3+ years</label><br>
+            </div>
+            <div id="formgroup">
+                <label for="coverletter">Cover letter</label><br>
+                <textarea id="coverletter" style="width: 650px; height: 120px;"></textarea>
+            </div>
+            <div id="formgroup">
+                <p>Which role/s are you interested in?</p>
+                <input type="checkbox" id="role">
+                <label id="frontend-label" for="role">Frontend Developer</label><br>
+                <input type="checkbox" id="role">
+                <label id="backend-label" for="role">Backend Developer</label><br>
+                <input type="checkbox" id="role">
+                <label id="fullstack-label" for="role">Fullstack Developer</label><br>
+                <input type="checkbox" id="role">
+                <label id="devops-label" for="role">Devops</label><br>
+            </div>
+            <div id="formgroup">
+                <p>Upload your resume</p>
+                    <span class="form-required">*</span>
+                <input type="file" id="cvUpload" name="CV"/>
+            </div>
+            <div id="formgroup">
+                <input type="submit">
             </div>
         </form>
     </div>
