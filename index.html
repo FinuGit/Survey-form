@@ -11,7 +11,7 @@
 <div class="container">
     <header class="header">
         <h1 class="text-center">Job Application Form</h1>
-        <p class="description text-center">Please fill out the form below to submit your job application!</p>
+        <p class="description text-center">Please fill out the form below to submit your job application</p>
     </header>
     <form action="" id="survey-form">
         <div id="formgroup">
@@ -26,7 +26,7 @@
         </div>
         <div id="formgroup">
             <label for="number">Phone number<span>(optional)</span></label>
-            <input id="number" class="form-control" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="Phone number" min="9" max="9">
+            <input id="number" class="form-control" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="Phone number" maxlength="9" minlength="9">
         </div>
         <div id="formgroup">
             <p>Which option the best describes your current role?</p>
@@ -64,14 +64,18 @@
         </div>
         <div id="formgroup">
             <p>Which role/s are you interested in?</p>
-            <input type="checkbox" id="role" value="frontend">
-            <label id="frontend-label" for="role">Frontend Developer</label>
-            <input type="checkbox" id="role" value="backend">
-            <label id="backend-label" for="role">Backend Developer</label>
-            <input type="checkbox" id="role" value="fullstack">
-            <label id="fullstack-label" for="role">Fullstack Developer</label>
-            <input type="checkbox" id="role" value="devops">
-            <label id="devops-label" for="role">Devops</label>
+            <label for="role">
+                <input type="checkbox" class="input-checkbox" id="role" value="frontend">Frontend Developer
+            </label>
+            <label for="role">
+                <input type="checkbox" class="input-checkbox" id="role" value="backend">Backend Developer
+            </label>
+            <label for="role">
+                <input type="checkbox" class="input-checkbox" id="role" value="fullstack">Fullstack Developer
+            </label>
+            <label for="role">
+                <input type="checkbox" class="input-checkbox" id="role" value="devops">Devops
+            </label>
         </div>
         <div id="formgroup">
             <p>Upload your resume</p>
@@ -79,7 +83,7 @@
             <input type="file" class="form-control" id="cvUpload" name="CV"/>
         </div>
         <div id="formgroup">
-            <input type="submit" value="Submit" class="form-control" id="submit">
+            <input type="submit" id="submit" value="Submit" class="form-control" id="submit">
         </div>
     </form>
 </div>
